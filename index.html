@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZANG ZIYUE | PORTFOLIO</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #111;
+            --accent: #888;
+            --night-bg: #050505;
+            --soft-gray: #f8f8f8;
+        }
+
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0; background: var(--bg); color: var(--text); 
+            font-family: "Hiragino Mincho ProN", "Songti SC", serif; 
+            line-height: 1.6; -webkit-font-smoothing: antialiased;
+        }
+
+        /* 导航 */
+        nav { 
+            position: fixed; top: 40px; width: 100%; padding: 0 5%; 
+            display: flex; justify-content: space-between; 
+            z-index: 100; font-size: 10px; letter-spacing: 2px;
+            mix-blend-mode: difference; color: white;
+        }
+
+        /* 封面 & 封底 */
+        .cover, .back-cover {
+            height: 100vh; display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; text-align: center;
+        }
+        .cover h1 { font-size: 3rem; font-weight: 200; letter-spacing: 15px; margin: 20px 0; }
+        .cover p, .back-cover p { font-size: 0.75rem; color: var(--accent); letter-spacing: 5px; text-transform: uppercase; }
+        .v-line { width: 1px; height: 100px; background: var(--text); margin: 30px 0; }
+
+        /* 项目容器 */
+        .project-wrap { margin-bottom: 50px; }
+        .page { 
+            min-height: 100vh; padding: 120px 8% 80px 8%; 
+            display: flex; flex-direction: column; justify-content: center;
+        }
+
+        /* 栅格系统 */
+        .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; align-items: start; margin-bottom: 40px; }
+        .col-12 { grid-column: span 12; }
+        .col-8 { grid-column: span 8; }
+        .col-6 { grid-column: span 6; }
+        .col-4 { grid-column: span 4; }
+        .col-3 { grid-column: span 3; }
+
+        img { width: 100%; height: auto; display: block; transition: 0.5s; }
+        .caption { font-size: 9px; color: var(--accent); margin-top: 10px; letter-spacing: 1px; }
+
+        .night-voyage { background: var(--night-bg); color: #eee; }
+        .night-voyage .v-line { background: #eee; }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .col-3, .col-4, .col-6, .col-8 { grid-column: span 12; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>臧子悦 ZANG ZIYUE</div>
+    <div>INDEX 2021-2024</div>
+</nav>
+
+<section class="cover">
+    <p>Photography Portfolio</p>
+    <h1>臧子悦</h1>
+    <div class="v-line"></div>
+    <p>2021 — 2024</p>
+</section>
+
+<div class="project-wrap">
+    <section class="page">
+        <div class="grid">
+            <div class="col-12"><span class="caption">PROJECT 01: 忘形 / 2024 — P1</span></div>
+            <div class="col-8"><img src="P4-1.jpg"></div>
+            <div class="col-4" style="margin-top: 40px;"><img src="P4-2.jpg"></div>
+            <div class="col-4"><img src="P4-3.jpg"></div>
+            <div class="col-4"><img src="P4-4.jpg"></div>
+            <div class="col-4"><img src="P5-5.jpg"></div>
+        </div>
+    </section>
+    <section class="page" style="background: var(--soft-gray);">
+        <div class="grid">
+            <div class="col-3"><img src="P5-6.jpg"></div>
+            <div class="col-3"><img src="P5-7.jpg"></div>
+            <div class="col-3"><img src="P5-8.jpg"></div>
+            <div class="col-3"><img src="P5-9.jpg"></div>
+            <div class="col-12" style="margin-top: 40px; text-align: center;">
+                <img src="P5-10.jpg" style="max-width: 80%; margin: 0 auto;">
+                <div class="caption">EXHIBITION VIEW</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="project-wrap">
+    <section class="page">
+        <div class="grid">
+            <div class="col-12"><span class="caption">PROJECT 02: 希望の広場 / 2022 — 2023</span></div>
+            <div class="col-6"><img src="P3-1.jpg"></div>
+            <div class="col-6"><img src="P3-2.jpg"></div>
+            <div class="col-4"><img src="P3-3.jpg"></div>
+            <div class="col-4"><img src="P3-4.jpg"></div>
+            <div class="col-4"><img src="P3-5.jpg"></div>
+        </div>
+    </section>
+    <section class="page">
+        <div class="grid">
+            <div class="col-8 offset-2"><img src="P3-6.jpg"></div>
+            <div class="col-6 offset-3" style="margin-top: 30px;"><img src="P3-7.jpg"></div>
+        </div>
+    </section>
+</div>
+
+<div class="project-wrap">
+    <section class="page">
+        <div class="grid">
+            <div class="col-12"><span class="caption">PROJECT 03: BOND / 2021 — 2022 — P1</span></div>
+            <div class="col-6"><img src="P2-1.jpg"></div>
+            <div class="col-6"><img src="P2-2.jpg"></div>
+            <div class="col-4"><img src="P2-3.jpg"></div>
+            <div class="col-4"><img src="P2-4.jpg"></div>
+            <div class="col-4"><img src="P2-5.jpg"></div>
+        </div>
+    </section>
+    <section class="page">
+        <div class="grid">
+            <div class="col-6"><img src="P2-6.jpg"></div>
+            <div class="col-6"><img src="P2-7.jpg"></div>
+            <div class="col-12" style="margin-top: 20px;"><img src="P2-8.jpg"></div>
+            <div class="col-12" style="margin-top: 20px;"><img src="P2-9.jpg"></div>
+        </div>
+    </section>
+    <section class="page" style="background: #f4f4f4;">
+        <div class="grid">
+            <div class="col-12">
+                <span class="caption">THE BOOK DESIGN</span>
+                <img src="P2-10.jpg" style="box-shadow: 0 30px 60px rgba(0,0,0,0.1); margin-top: 20px;">
+                <div class="caption" style="text-align: right;">BOND: PUBLICATION DESIGN ARCHIVE</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="project-wrap night-voyage">
+    <section class="page">
+        <div class="grid">
+            <div class="col-12"><span class="caption" style="color:#444;">PROJECT 04: WE SAIL THROUGH ENDLESS NIGHT / 2021</span></div>
+            <div class="col-8 offset-2"><img src="P1-1.jpg"></div>
+            <div class="col-4"><img src="P1-2.jpg"></div>
+            <div class="col-4"><img src="P1-3.jpg"></div>
+            <div class="col-4"><img src="P1-4.jpg"></div>
+        </div>
+    </section>
+    <section class="page">
+        <div class="grid">
+            <div class="col-6"><img src="P1-5.jpg"></div>
+            <div class="col-6"><img src="P1-6.jpg"></div>
+            <div class="col-4"><img src="P1-7.jpg"></div>
+            <div class="col-4"><img src="P1-8.jpg"></div>
+            <div class="col-4"><img src="P1-9.jpg"></div>
+        </div>
+    </section>
+</div>
+
+<div class="project-wrap">
+    <section class="page">
+        <div class="grid">
+            <div class="col-12"><span class="caption">SELECTED WORK / ARCHIVE</span></div>
+            <div class="col-6"><img src="W (1).jpg"></div>
+            <div class="col-6"><img src="W (2).jpg"></div>
+            <div class="col-4"><img src="W (3).jpg"></div>
+            <div class="col-4"><img src="W (4).jpg"></div>
+            <div class="col-4"><img src="W (5).jpg"></div>
+        </div>
+    </section>
+    <section class="page" style="background: var(--soft-gray);">
+        <div class="grid">
+            <div class="col-3"><img src="W (6).jpg"></div>
+            <div class="col-3"><img src="W (7).jpg"></div>
+            <div class="col-3"><img src="W (8).jpg"></div>
+            <div class="col-3"><img src="W (9).jpg"></div>
+            <div class="col-12" style="margin-top: 20px;"><img src="W (10).jpg"></div>
+        </div>
+    </section>
+    <section class="page">
+        <div class="grid">
+            <div class="col-6"><img src="W (11).jpg"></div>
+            <div class="col-6"><img src="W (12).jpg"></div>
+            <div class="col-3"><img src="W (13).jpg"></div>
+            <div class="col-3"><img src="W (14).jpg"></div>
+            <div class="col-3"><img src="W (15).jpg"></div>
+            <div class="col-3"><img src="W (16).jpg"></div>
+        </div>
+    </section>
+</div>
+
+<section class="back-cover">
+    <div class="v-line"></div>
+    <h1 style="font-size: 1.5rem; letter-spacing: 10px;">END</h1>
+    <p style="margin-top: 20px;">ZANG ZIYUE PHOTOGRAPHY</p>
+    <p style="font-size: 9px; color: #ccc;">All rights reserved &copy; 2026</p>
+</section>
+
+</body>
+</html>
